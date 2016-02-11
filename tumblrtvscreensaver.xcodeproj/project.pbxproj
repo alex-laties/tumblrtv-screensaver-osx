@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECE049BC1C6C15D60014ACBE /* tumblrtvscreensaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE049BB1C6C15D60014ACBE /* tumblrtvscreensaverView.h */; };
+		ECE049BE1C6C15D60014ACBE /* tumblrtvscreensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE049BD1C6C15D60014ACBE /* tumblrtvscreensaverView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECE049B81C6C15D50014ACBE /* tumblrtvscreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblrtvscreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE049BB1C6C15D60014ACBE /* tumblrtvscreensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tumblrtvscreensaverView.h; sourceTree = "<group>"; };
+		ECE049BD1C6C15D60014ACBE /* tumblrtvscreensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tumblrtvscreensaverView.m; sourceTree = "<group>"; };
+		ECE049BF1C6C15D60014ACBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECE049B41C6C15D50014ACBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECE049AE1C6C15D50014ACBE = {
+			isa = PBXGroup;
+			children = (
+				ECE049BA1C6C15D50014ACBE /* tumblrtvscreensaver */,
+				ECE049B91C6C15D50014ACBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECE049B91C6C15D50014ACBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECE049B81C6C15D50014ACBE /* tumblrtvscreensaver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECE049BA1C6C15D50014ACBE /* tumblrtvscreensaver */ = {
+			isa = PBXGroup;
+			children = (
+				ECE049BB1C6C15D60014ACBE /* tumblrtvscreensaverView.h */,
+				ECE049BD1C6C15D60014ACBE /* tumblrtvscreensaverView.m */,
+				ECE049BF1C6C15D60014ACBE /* Info.plist */,
+			);
+			path = tumblrtvscreensaver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ECE049B51C6C15D50014ACBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE049BC1C6C15D60014ACBE /* tumblrtvscreensaverView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ECE049B71C6C15D50014ACBE /* tumblrtvscreensaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECE049C21C6C15D60014ACBE /* Build configuration list for PBXNativeTarget "tumblrtvscreensaver" */;
+			buildPhases = (
+				ECE049B31C6C15D50014ACBE /* Sources */,
+				ECE049B41C6C15D50014ACBE /* Frameworks */,
+				ECE049B51C6C15D50014ACBE /* Headers */,
+				ECE049B61C6C15D50014ACBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tumblrtvscreensaver;
+			productName = tumblrtvscreensaver;
+			productReference = ECE049B81C6C15D50014ACBE /* tumblrtvscreensaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECE049AF1C6C15D50014ACBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Webscale AF, LLC";
+				TargetAttributes = {
+					ECE049B71C6C15D50014ACBE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = ECE049B21C6C15D50014ACBE /* Build configuration list for PBXProject "tumblrtvscreensaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ECE049AE1C6C15D50014ACBE;
+			productRefGroup = ECE049B91C6C15D50014ACBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECE049B71C6C15D50014ACBE /* tumblrtvscreensaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECE049B61C6C15D50014ACBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECE049B31C6C15D50014ACBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE049BE1C6C15D60014ACBE /* tumblrtvscreensaverView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ECE049C01C6C15D60014ACBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ECE049C11C6C15D60014ACBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ECE049C31C6C15D60014ACBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tumblrtvscreensaver/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = webscaleaf.tumblrtvscreensaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		ECE049C41C6C15D60014ACBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tumblrtvscreensaver/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = webscaleaf.tumblrtvscreensaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECE049B21C6C15D50014ACBE /* Build configuration list for PBXProject "tumblrtvscreensaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE049C01C6C15D60014ACBE /* Debug */,
+				ECE049C11C6C15D60014ACBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECE049C21C6C15D60014ACBE /* Build configuration list for PBXNativeTarget "tumblrtvscreensaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE049C31C6C15D60014ACBE /* Debug */,
+				ECE049C41C6C15D60014ACBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECE049AF1C6C15D50014ACBE /* Project object */;
+}
