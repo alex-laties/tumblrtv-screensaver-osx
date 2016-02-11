@@ -21,17 +21,50 @@
 
 - (void)startAnimation
 {
-    [super startAnimation];
+    return;
 }
 
 - (void)stopAnimation
 {
-    [super stopAnimation];
+    return;
 }
 
 - (void)drawRect:(NSRect)rect
 {
-    [super drawRect:rect];
+    //get tags from config file
+    NSString *rel_path = @"~/.tumblrtvconfig";
+    NSString *config_path = [rel_path stringByExpandingTildeInPath];
+    [config_path writeToFile:@"/tmp/wat" atomically:true encoding:NSUTF8StringEncoding error:nil];
+    NSString *tags = [NSString stringWithContentsOfFile:config_path encoding:NSUTF8StringEncoding error:nil];
+    [tags writeToFile:@"/tmp/wat2" atomically:true encoding:NSUTF8StringEncoding error:nil];
+    //select tag
+    
+    NSArray *split_tags = nil;
+    if (tags != nil) {
+        split_tags = [tags componentsSeparatedByString:@","];
+    } else {
+        split_tags = @[@"sakuga", @"cyberpunk", @"trippy", @"tumblr", @"staff"];
+    }
+    uint32_t rnd = arc4random_uniform([split_tags count]);
+    NSString *tag = [split_tags objectAtIndex:rnd];
+    NSString *trimmed_tag = [tag stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *sanitized_tag = [trimmed_tag stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+    
+    //generate url
+    NSString *base_url = @"https://www.tumblr.com/tv/";
+    NSString *target_url = [base_url stringByAppendingString:sanitized_tag];
+    
+    //build webview
+    self.webView = [[WKWebView alloc] initWithFrame:self.frame];
+    self.webView.navigationDelegate = self;
+    self.webView.UIDelegate = self;
+    
+    //set url
+    NSURL *url = [NSURL URLWithString:target_url];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [self addSubview:self.webView]; //actually sets webview as renderable
+    [self.webView loadRequest:req];
+    return;
 }
 
 - (void)animateOneFrame

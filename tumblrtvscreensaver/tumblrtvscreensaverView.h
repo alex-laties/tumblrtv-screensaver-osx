@@ -7,7 +7,10 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+@import WebKit;
 
 @interface tumblrtvscreensaverView : ScreenSaverView
+
+@property(strong, nonatomic) WKWebView *webView;
 
 @end
