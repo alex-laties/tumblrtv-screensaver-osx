@@ -15,21 +15,13 @@
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
         [self setAnimationTimeInterval:1/30.0];
+        [self createWebView];
     }
+
     return self;
 }
 
-- (void)startAnimation
-{
-    return;
-}
-
-- (void)stopAnimation
-{
-    return;
-}
-
-- (void)drawRect:(NSRect)rect
+- (void)createWebView
 {
     //get tags from config file
     NSString *rel_path = @"~/.tumblrtvconfig";
@@ -38,7 +30,6 @@
     NSString *tags = [NSString stringWithContentsOfFile:config_path encoding:NSUTF8StringEncoding error:nil];
     [tags writeToFile:@"/tmp/wat2" atomically:true encoding:NSUTF8StringEncoding error:nil];
     //select tag
-    
     NSArray *split_tags = nil;
     if (tags != nil) {
         split_tags = [tags componentsSeparatedByString:@","];
@@ -58,18 +49,40 @@
     self.webView = [[WKWebView alloc] initWithFrame:self.frame];
     self.webView.navigationDelegate = self;
     self.webView.UIDelegate = self;
-    
     //set url
     NSURL *url = [NSURL URLWithString:target_url];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
-    [self addSubview:self.webView]; //actually sets webview as renderable
     [self.webView loadRequest:req];
+    [self.webView setHidden:YES]; //hide the webview until there's something to view. otherwise, blinding white.
+    [self addSubview:self.webView]; //actually sets webview as renderable
     return;
 }
 
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    [self.webView setHidden:NO];
+}
+
+// The following functions are calling to `super` such that the background is drawn black.
+
+- (void)startAnimation
+{
+    [super startAnimation];
+}
+
+- (void)stopAnimation
+{
+    [super stopAnimation];
+}
+
+- (void)drawRect:(NSRect)rect
+{
+    [super drawRect:rect];
+}
+
+
 - (void)animateOneFrame
 {
-    return;
+    [self stopAnimation];
 }
 
 - (BOOL)hasConfigureSheet
