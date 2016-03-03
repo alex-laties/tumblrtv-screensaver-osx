@@ -15,13 +15,13 @@
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
         [self setAnimationTimeInterval:1/30.0];
-        [self createWebView];
+        [self createWebView:frame];
     }
 
     return self;
 }
 
-- (void)createWebView
+- (void)createWebView:(NSRect) frame
 {
     //get tags from config file
     NSString *rel_path = @"~/.tumblrtvconfig";
@@ -46,7 +46,7 @@
     NSString *target_url = [base_url stringByAppendingString:sanitized_tag];
     
     //build webview
-    self.webView = [[WKWebView alloc] initWithFrame:self.frame];
+    self.webView = [[WKWebView alloc] initWithFrame:NSMakeRect(0, 0, frame.size.width, frame.size.height)];
     self.webView.navigationDelegate = self;
     self.webView.UIDelegate = self;
     //set url
